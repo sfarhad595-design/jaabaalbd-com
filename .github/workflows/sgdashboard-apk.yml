@@ -1,0 +1,48 @@
+name: Build SG Dashboard APK
+
+on:
+  push:
+    paths:
+      - 'sgdashboard-app/**'
+      - '.github/workflows/sgdashboard-apk.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+
+      - name: Build APK
+        working-directory: sgdashboard-app
+        run: gradle assembleDebug --no-daemon --stacktrace
+
+      - name: Rename APK
+        run: cp sgdashboard-app/app/build/outputs/apk/debug/app-debug.apk SGDashboard.apk
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: SGDashboard-apk
+          path: SGDashboard.apk
+
+      - name: Publish APK as a release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: sgdashboard-v1.0-build${{ github.run_number }}
+          name: SG Dashboard app (build ${{ github.run_number }})
+          target_commitish: ${{ github.sha }}
+          body: Android app for the sunnahgallerybd.com dashboard. Download SGDashboard.apk and open it on your phone to install.
+          files: SGDashboard.apk
