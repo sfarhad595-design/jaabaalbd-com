@@ -1,0 +1,33 @@
+/* Sunnah Gallery BD — brand tokens and fonts. Link this from every design. */
+@font-face{font-family:"Hind Siliguri";font-weight:400;src:url(fonts/hind-siliguri-bengali-400-normal.woff2) format("woff2");unicode-range:U+0951-0952,U+0964-0965,U+0980-09FE,U+1CD0,U+1CD2,U+1CD5-1CD6,U+1CD8,U+1CE1,U+1CEA,U+1CED,U+1CF2,U+1CF5-1CF7,U+200C-200D,U+20B9,U+25CC,U+A8F1}
+@font-face{font-family:"Hind Siliguri";font-weight:500;src:url(fonts/hind-siliguri-bengali-500-normal.woff2) format("woff2");unicode-range:U+0951-0952,U+0964-0965,U+0980-09FE,U+1CD0,U+1CD2,U+1CD5-1CD6,U+1CD8,U+1CE1,U+1CEA,U+1CED,U+1CF2,U+1CF5-1CF7,U+200C-200D,U+20B9,U+25CC,U+A8F1}
+@font-face{font-family:"Hind Siliguri";font-weight:600;src:url(fonts/hind-siliguri-bengali-600-normal.woff2) format("woff2");unicode-range:U+0951-0952,U+0964-0965,U+0980-09FE,U+1CD0,U+1CD2,U+1CD5-1CD6,U+1CD8,U+1CE1,U+1CEA,U+1CED,U+1CF2,U+1CF5-1CF7,U+200C-200D,U+20B9,U+25CC,U+A8F1}
+@font-face{font-family:"Hind Siliguri";font-weight:700;src:url(fonts/hind-siliguri-bengali-700-normal.woff2) format("woff2");unicode-range:U+0951-0952,U+0964-0965,U+0980-09FE,U+1CD0,U+1CD2,U+1CD5-1CD6,U+1CD8,U+1CE1,U+1CEA,U+1CED,U+1CF2,U+1CF5-1CF7,U+200C-200D,U+20B9,U+25CC,U+A8F1}
+@font-face{font-family:"Hind Siliguri";font-weight:400;src:url(fonts/hind-siliguri-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F,U+20AC,U+2122,U+2190-2199}
+@font-face{font-family:"Hind Siliguri";font-weight:500;src:url(fonts/hind-siliguri-latin-500-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F,U+20AC,U+2122,U+2190-2199}
+@font-face{font-family:"Hind Siliguri";font-weight:600;src:url(fonts/hind-siliguri-latin-600-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F,U+20AC,U+2122,U+2190-2199}
+@font-face{font-family:"Hind Siliguri";font-weight:700;src:url(fonts/hind-siliguri-latin-700-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F,U+20AC,U+2122,U+2190-2199}
+@font-face{font-family:"Noto Serif Bengali";font-weight:400;src:url(fonts/noto-serif-bengali-bengali-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Noto Serif Bengali";font-weight:600;src:url(fonts/noto-serif-bengali-bengali-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Noto Serif Bengali";font-weight:700;src:url(fonts/noto-serif-bengali-bengali-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Noto Serif Bengali";font-weight:800;src:url(fonts/noto-serif-bengali-bengali-800-normal.woff2) format("woff2")}
+@font-face{font-family:"Noto Serif Bengali Latin";font-weight:600;src:url(fonts/noto-serif-bengali-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Noto Serif Bengali Latin";font-weight:800;src:url(fonts/noto-serif-bengali-latin-800-normal.woff2) format("woff2")}
+
+:root{
+  /* palette taken from the black calligraphy logo; change here to restyle everything */
+  --ink:#121212;        /* logo black: headlines, logo */
+  --ivory:#F5F1EA;      /* main background */
+  --sand:#E7DFD2;       /* panels, photo backdrop */
+  --gold:#B08D57;       /* accents, price tag, lines */
+  --gold-deep:#8A6A3B;
+  --offer:#7A1F2B;      /* deep maroon for discount badges only */
+  --muted:#6B645B;      /* small print */
+
+  --display:"Noto Serif Bengali","Noto Serif Bengali Latin",serif;   /* headlines */
+  --text:"Hind Siliguri",sans-serif;                                 /* everything else */
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--ivory)}
+body{font-family:var(--text);color:var(--ink);-webkit-font-smoothing:antialiased}
+.canvas{position:relative;overflow:hidden;background:var(--ivory)}

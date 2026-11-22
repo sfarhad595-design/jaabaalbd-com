@@ -1,0 +1,29 @@
+<!doctype html>
+<!-- Facebook/Instagram story or reel cover, 1080x1920. Keep text out of the top 250px and bottom 300px (app buttons cover them). -->
+<html lang="bn"><head><meta charset="utf-8">
+<link rel="stylesheet" href="__ASSETS__/brand.css">
+<style>
+  .canvas{width:1080px;height:1920px}
+  .photo{position:absolute;left:0;top:0;width:1080px;height:1320px;object-fit:cover;object-position:center top}
+  .fade{position:absolute;left:0;top:1000px;width:1080px;height:320px;background:linear-gradient(transparent,var(--ivory))}
+  .logo{position:absolute;right:70px;top:270px;height:150px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.25))}
+  .panel{position:absolute;left:80px;right:80px;top:1270px;height:350px;text-align:center}
+  .name{font:800 76px/1.25 var(--display);max-height:200px;overflow:hidden}
+  .line{width:160px;height:3px;background:var(--gold);margin:22px auto}
+  .price{font:700 84px var(--text)}
+  .price .was{font:500 42px var(--text);color:var(--muted);text-decoration:line-through;margin-left:16px}
+  .badge{position:absolute;left:70px;top:270px;padding:18px 30px;border-radius:40px;background:var(--offer);color:#fff;font:700 40px var(--text)}
+  .contact{position:absolute;left:0;right:0;top:1640px;text-align:center;font:600 34px var(--text)}
+</style></head>
+<body><div class="canvas">
+  <img class="photo" src="{{PHOTO}}" alt="">
+  <div class="fade"></div>
+  <img class="logo" src="__ASSETS__/logo-black.png" alt=""><!-- use logo-white.png on a dark photo -->
+  <div class="badge">{{OFFER}} ছাড়</div>
+  <div class="panel">
+    <div class="name" data-fit="name">{{NAME}}</div>
+    <div class="line"></div>
+    <div class="price">৳{{PRICE}}<span class="was">৳{{OLD_PRICE}}</span></div>
+  </div>
+  <div class="contact">অর্ডার করতে WhatsApp: {{PHONE}}</div>
+</div></body></html>
