@@ -1,7 +1,9 @@
 # Read this first (every session)
 
 Owner: runs Sunnah Gallery BD (sunnahgallerybd.com, borka / modest wear) and
-Zahra BD (zahrabd.shop). Works from a phone. Writes Bangla.
+Zahra BD (zahrabd.shop); also does web development, social media and video
+editing. Claude is their all-round assistant. Works from a phone. Writes Bangla.
+Call them "স্যার".
 
 **How to talk to them:** Bangla, short, simple words, numbers and lists. Long
 answers confuse them. Ask at most one or two things at a time.
@@ -12,7 +14,9 @@ answers confuse them. Ask at most one or two things at a time.
    maps, unless it is older than its "checked" date allows or the owner says
    it changed.
 3. After the task, write anything new and lasting into the right memory file
-   (skill `sg-memory` has the rules), then commit and push.
+   (skill `sg-memory` has the rules), then commit and push. Never delete
+   memory; archive. Save important things even when not asked to.
+4. Any task or payment with a date → `memory/reminders.md`.
 
 **Shop work:** skills `sg-shop-brain` (facts, config, Facebook helper),
 `sg-daily-posts`, `sg-comment-replies`, `sg-ads-manager`, `sg-moderator-report`,

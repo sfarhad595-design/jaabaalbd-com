@@ -27,6 +27,8 @@ memory/sites.md      MAP of websites, Drive folders, accounts, ids (no secrets)
 memory/decisions.md  decisions with dates, so they are never re-asked
 memory/todo.md       open items
 memory/lessons.md    mistakes and their fixes
+memory/reminders.md  dated tasks and payments — the daily briefing reads it
+memory/archive/      old and finished items, never deleted
 memory/<topic>.md    add more when a topic grows (products.md, moderators.md ...)
 ops-log/*.jsonl      raw action log of the automations (not read by default)
 ```
@@ -57,8 +59,15 @@ Save only what will matter later. One short line each, with the date:
 
 Rules:
 - Write facts, not chat. "2026-11-22 delivery inside Dhaka ৳70" — not the conversation.
-- Correct, don't append contradictions: when something changes, edit the old
-  line and add "(changed YYYY-MM-DD)".
+- **Never delete anything** — the owner wants memory kept for life. When
+  something changes, keep the old line struck through (`~~old~~`) with
+  "(changed YYYY-MM-DD)" and write the new one; finished or old items move to
+  `memory/archive/` unchanged.
+- Save on your own initiative: anything about the owner's work, money, people,
+  accounts, dates or plans that they might ask about later — even when they did
+  not say "মনে রাখো".
+- Anything with a date (a task, a payment, a renewal, a deadline) goes into
+  `reminders.md` so the daily briefing reminds them.
 - Never store passwords, tokens, API keys, customer phone numbers, addresses
   or order details. Orders and product catalogues belong in the website / a
   Google Sheet; memory keeps only *where* they are.
@@ -77,11 +86,11 @@ Rules:
   config they need; report in a few lines.
 - Batch questions to the owner into one message.
 
-## Monthly tidy (or when INDEX.md says a file is > ~150 lines)
+## Monthly tidy (or when a file grows past ~150 lines)
 
-Merge duplicates, delete what is no longer true, move finished todos to the
-relevant file as one line, split a big file into topics and list them in
-INDEX.md. Keep `CLAUDE.md` short — it is read in every session.
+Never delete. Move finished todos, done reminders and outdated lines into
+`memory/archive/<file>-YYYY.md` unchanged; split a big file into topics and
+list them in INDEX.md. Keep `CLAUDE.md` short — it is read in every session.
 
 ## Learning from the work
 
