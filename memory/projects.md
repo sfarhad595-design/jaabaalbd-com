@@ -3,6 +3,11 @@
 All code lives in this repo, branch `ccr-4cc3c4b3-t7cj6r`
 (github.com/sfarhad595-design/jaabaalbd-com, public).
 
+## Scheduled tasks
+| name | when | id | does |
+| --- | --- | --- | --- |
+| সকালের রিমাইন্ডার | daily 08:47 BD | trig_01JrYskzW4HPwRzXW2Acr9G2 | reads memory/reminders.md + todo.md, sends a short Bangla push to the owner. Has no connectors (repo only). |
+
 ## Shop automation skills (2026-11-22)
 `.claude/skills/`: sg-shop-brain, sg-daily-posts, sg-comment-replies,
 sg-ads-manager, sg-moderator-report. Not running yet — waiting on Drive
