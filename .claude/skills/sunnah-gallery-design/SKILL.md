@@ -110,3 +110,41 @@ When asked for several posts, vary the layout (product post, detail close-up,
 offer post, customer-question post, new-arrival story) but keep the brand
 identical, and give each its own short Facebook caption in Bangla with 3–5
 hashtags (#বোরকা #abaya #SunnahGalleryBD ...).
+
+## Reference designs (competitor analysis)
+
+The owner collected 20+ reference images from Glam Touch and Hisra brands.
+Full analysis: `references/DESIGN-ANALYSIS.md`. Key lessons:
+
+**Background (priority order):**
+1. Monochromatic — hijab color as background (most premium look)
+2. Warm neutral — ivory/beige/cream (our brand default)
+3. Lifestyle/real setting (relatable, engagement posts)
+4. Dark dramatic — maroon/navy (special/limited drops)
+
+**Photo count → layout:**
+- 1 photo: hero shot, product center, text below or right
+- 2 photos: front+back OR 2 colors side by side
+- 3-4 photos: collage with 1 large + 2-3 detail shots
+- 5 photos: all colors line-up on flat background
+
+**Text placement rules (from references):**
+- Brand logo → top-left
+- Product name (italic script) → center or bottom-center
+- Bangla tagline → bottom 30% of image
+- Never place text over model's face
+- Large faded decorative text in background layer is trendy
+- Max 1 accent color; keep it simple
+
+**Font style:**
+- Product names: elegant italic (Cormorant, Playfair style)
+- Bangla captions: bold modern, mixed sizes for emphasis
+- Casual posts: handwritten style
+
+**Color contrast:**
+- Light bg → dark text + gold accent
+- Dark bg → white text + yellow/gold accent
+- Max 1 accent color per design
+
+**Reference folder:** `references/glam-touch/` (17 images) + `references/hisra/` (3 images)
+Add new references there and update `references/DESIGN-ANALYSIS.md`.
