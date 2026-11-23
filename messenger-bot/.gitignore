@@ -1,0 +1,6 @@
+.env
+bot.db
+learn.jsonl
+node_modules/
+PAUSE
+*.log

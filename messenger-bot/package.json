@@ -1,0 +1,18 @@
+{
+  "name": "sunnah-gallery-messenger-bot",
+  "version": "1.0.0",
+  "description": "24/7 Messenger inbox bot for Sunnah Gallery BD",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.30.0",
+    "better-sqlite3": "^11.0.0",
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
