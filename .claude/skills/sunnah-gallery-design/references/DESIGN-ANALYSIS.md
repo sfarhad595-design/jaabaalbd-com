@@ -1,6 +1,6 @@
 # Design Reference Analysis
-# Source: 20 reference images from Glam Touch & Hisra brands
-# Last updated: 2026-11-23 | Add more images to glam-touch/ or hisra/ folders
+# Source: 35 reference images — Glam Touch, Hisra, Gerai Hawa, OneBrand + others
+# Last updated: 2026-11-23 | Add more images to glam-touch/ hisra/ or other-brands/ folders
 
 ---
 
@@ -44,17 +44,30 @@
 
 ---
 
-## Font Style Guide
+## Font Style Guide (CRITICAL — apply every design)
 
-### পণ্যের নাম (Product Name)
-- **English**: Italic serif/script — যেমন: *Meher*, *Zara*, *Sophia*, *Enaya*
-- মোটা না, elegant হবে
-- Example font: Cormorant Italic, Playfair Display Italic
+### পণ্যের নাম (Product Name) — THE HERO ELEMENT
+- **English italic serif** — HUGE, thin, elegant — 150-200px
+- যেমন: *Muneera*, *Ar-Rumaisha*, *Ayra*, *Ummi* — এই style
+- Font: Cormorant Garamond italic 300 weight (Google Fonts) — fallback: Georgia italic
+- এটাই সবচেয়ে বড় text element — সবকিছু এর চারপাশে সাজানো হয়
+- **মোটা BANGLA bold product name ব্যবহার করা যাবে না**
+
+### বাংলা Product Name — SECONDARY
+- Product-এর Bangla নাম → ছোট, 30-40px, 60-70% opacity
+- English-এর নিচে রাখবে
+- Noto Serif Bengali 400 weight — regular, NOT bold
 
 ### বাংলা Caption / Tagline
 - **Bold, modern** — মিক্স সাইজ
 - বড় শব্দ → বড় সাইজ, ছোট শব্দ → ছোট সাইজ
 - Example: "সরলতার মাঝেও থাকে **রাজকীয় সৌন্দর্য**"
+
+### Background Decorative Text — VISIBLE GRAPHIC ELEMENT
+- Product name-এর বড় faded version — 250-350px
+- Opacity: **12-15%** (NOT 4% — that's invisible)
+- Position: bottom-right, slightly outside frame, overlapping gradient area
+- References: "REMU" (Muneera), "MENU" (Meher), "AMAT" (niqab), "Ayra"
 
 ### হাতের লেখা style (Casual Posts)
 - Monogram launch, fun posts-এ
@@ -145,4 +158,25 @@
 - `ref-19` — Lifestyle cafe, yellow bg, Bangla
 - `ref-20` — 1 model outdoor brick, editorial
 
-**আরও ছবি যোগ করুন:** `references/glam-touch/` বা `references/hisra/` ফোল্ডারে রাখুন এবং এই ইন্ডেক্সে যোগ করুন।
+### Glam Touch (25 images total — ref-21 onwards new)
+- `ref-21` — Eid/26 camel outfit, italic "m" script, lifestyle interior
+- `ref-22` — Dark chocolate abaya, white bg, "modest Fashion" italic center-left
+- `ref-23` — Muneera purple, "ABAYA AL" small + "Muneera" huge italic, "REMU" bg text
+- `ref-24` — Ar-Rumaisha outdoor lifestyle, arch frame panel
+- `ref-25` — Pink hijab with detail callout lines (feature showcase layout)
+- `ref-26` — Ummi 5 models, pink bg, lineup, "Ummi" italic title
+- `ref-27` — Abru 3 Layer 5 models, purple bg, lineup
+- `ref-28` — Ar-Rumaisha new arrival, photo-within-frame editorial style
+
+### Hisra (6 images total — ref-21 onwards new)
+- `ref-21` — "AMAT" niqab, gray bg, large faded "AMAT" text 12-15% opacity
+- `ref-22` — 2 models, "Modest Wear" italic serif large, office setting
+- `ref-23` — Navy hijab, Arabic calligraphy bg (large, editorial)
+
+### Other Brands (4 images)
+- `other-brands/ref-01` — Cream palace abaya, clean editorial, minimal text
+- `other-brands/ref-02` — Maroon open abaya, warm beige bg, clean minimal
+- `other-brands/ref-03` — Gerai Hawa, green jilbab, feature callout lines
+- `other-brands/ref-04` — ONEBRAND, purple abaya on hanger, detail callouts, dark bg
+
+**আরও ছবি যোগ করুন:** `references/glam-touch/` বা `references/hisra/` বা `references/other-brands/` ফোল্ডারে রাখুন এবং এই ইন্ডেক্সে যোগ করুন।

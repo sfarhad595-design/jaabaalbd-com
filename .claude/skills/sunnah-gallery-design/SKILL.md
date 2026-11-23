@@ -136,9 +136,14 @@ Full analysis: `references/DESIGN-ANALYSIS.md`. Key lessons:
 - Large faded decorative text in background layer is trendy
 - Max 1 accent color; keep it simple
 
-**Font style:**
-- Product names: elegant italic (Cormorant, Playfair style)
+**Font style (CRITICAL):**
+- Product name: Cormorant Garamond italic 300 weight, HUGE (150-200px) — THE hero element
+  - `@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400&display=swap')`
+  - Fallback: `Georgia, 'Times New Roman', serif` with `font-style: italic`
+  - **Never use bold Bangla as the main product name**
+- Bangla product name: secondary, 30-40px, 60-70% opacity, below English
 - Bangla captions: bold modern, mixed sizes for emphasis
+- Background decorative: product name huge (280-350px), 12-15% opacity — clearly visible
 - Casual posts: handwritten style
 
 **Color contrast:**
