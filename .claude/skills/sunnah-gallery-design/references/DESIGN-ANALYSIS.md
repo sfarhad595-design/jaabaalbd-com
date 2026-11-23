@@ -179,4 +179,13 @@
 - `other-brands/ref-03` — Gerai Hawa, green jilbab, feature callout lines
 - `other-brands/ref-04` — ONEBRAND, purple abaya on hanger, detail callouts, dark bg
 
+### Glam Touch (additional — ref-29 to ref-32)
+- `ref-29` — Karchupi 2 models, warm brown/camel bg, pampas grass props, "KARCHUPI" bold bottom
+- `ref-30` — Abaya Al-Muneera, purple, clean white room, gold vase prop, italic text right side
+- `ref-31` — Abaya Al-Muneera, pink/rose, circular arch frame composition, text right side
+- `ref-32` — Karchupi Abaya, pink luxury edition, large faded "PETM" bg text, model full frame
+
+### Hisra (additional — ref-24)
+- `ref-24` — Black abaya + flowing white fabric element, faded "bra" bg text, editorial walk pose
+
 **আরও ছবি যোগ করুন:** `references/glam-touch/` বা `references/hisra/` বা `references/other-brands/` ফোল্ডারে রাখুন এবং এই ইন্ডেক্সে যোগ করুন।
