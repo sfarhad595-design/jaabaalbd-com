@@ -48,3 +48,9 @@ CreateOrder, EditOrder). Tested create + edit page render; no test order saved.
   address from pasted text (labels or no labels, Bangla digits ok, skips
   greetings and product/colour/size lines). Fills on blur or "বসিয়ে দিন".
   No AI/API cost — plain rules. Product is not auto-filled (owner said not needed).
+- 2026-11-26 paste box now also fills products: parseProducts() in OrderForm.php
+  matches product name (Bangla→English map: সাকিনা/মানহা/জারা, colour words),
+  colour from product's colour list, size from product's sizes, qty ("২টা"),
+  ওড়না → with_orna. Several colours/sizes → one item each. Tested live
+  (Sakina 2 colours + orna, Manha Merun Pink). New Bangla product names need
+  adding to the $map in parseProducts().
