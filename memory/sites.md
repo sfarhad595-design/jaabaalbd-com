@@ -3,8 +3,13 @@
 ## Websites
 - sunnahgallerybd.com — custom-built site (owner says they have the code; not
   shared yet). Admin at /dashboard. Unreachable from the cloud session (proxy).
-- zahrabd.shop — hosting account was **suspended** (2026-11-18); owner must
-  contact the host.
+- zahrabd.shop — live again (checked 2026-11-26). Laravel + Filament app.
+  cPanel host tista.bd.svlogins.com:2083 (owner logs in; never store password).
+  Code: /home2/zahrabds/laravel_app. Admin panel: zahrabd.shop/zahraadmin
+  (also /dashboard). Orders form: app/Filament/Resources/Orders/Schemas/OrderForm.php,
+  save logic in Orders/Pages/CreateOrder.php + EditOrder.php.
+  Landing pages: LandingPageController.php + resources/views/landing/*.
+  Matching orna (ওড়না/হিজাব) = extra OrderItem "ম্যাচিং ওড়না/হিজাব" ৳300.
 
 ## Google Drive (owner's), Sunnah Gallery folders found 2026-11-22
 | folder | id |

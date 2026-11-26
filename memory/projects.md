@@ -36,3 +36,10 @@ The cloud session cannot reach dl.google.com, so APKs are only built on Actions.
   mcp-builder, canvas-design, theme-factory, brand-guidelines, algorithmic-art,
   doc-coauthoring, internal-comms, slack-gif-creator, academy-guide,
   discernment-nudge. (docx/xlsx/pptx/pdf/skill-creator/claude-api are built in.)
+
+## Zahra admin — simple moderator order form (2026-11-26)
+OrderForm.php rewritten: phone/name/address only; product "ওয়েবসাইটে আছে/নেই";
+product colours & sizes as buttons; ওড়না tick (+৳300, adds own item); flat ৳
+discount; delivery ভিতরে/বাইরে/ফ্রি; customer note + office note; payment and
+source/status in collapsed boxes. Backups: *.bak-20261126-simple (OrderForm,
+CreateOrder, EditOrder). Tested create + edit page render; no test order saved.
