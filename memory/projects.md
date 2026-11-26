@@ -43,3 +43,8 @@ product colours & sizes as buttons; ওড়না tick (+৳300, adds own item
 discount; delivery ভিতরে/বাইরে/ফ্রি; customer note + office note; payment and
 source/status in collapsed boxes. Backups: *.bak-20261126-simple (OrderForm,
 CreateOrder, EditOrder). Tested create + edit page render; no test order saved.
+- 2026-11-26 added "📋 মেসেজ পেস্ট করুন" box at top of the order form
+  (Steadfast-style): parsePaste() in OrderForm.php pulls name / phone /
+  address from pasted text (labels or no labels, Bangla digits ok, skips
+  greetings and product/colour/size lines). Fills on blur or "বসিয়ে দিন".
+  No AI/API cost — plain rules. Product is not auto-filled (owner said not needed).

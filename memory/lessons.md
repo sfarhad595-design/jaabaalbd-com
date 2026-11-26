@@ -11,3 +11,5 @@
   showfile.html?file=..&dir=.. and using get_page_text. Write files with UAPI
   Fileman/save_file_content from the cPanel tab (it saves CRLF; PHP is fine).
   Always save a .bak-YYYYMMDD copy first.
+- cPanel save_file_content drops the final newline and saves CRLF; compare
+  hashes after converting CRLF→LF and adding "\n".
