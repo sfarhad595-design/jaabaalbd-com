@@ -54,3 +54,17 @@ CreateOrder, EditOrder). Tested create + edit page render; no test order saved.
   ওড়না → with_orna. Several colours/sizes → one item each. Tested live
   (Sakina 2 colours + orna, Manha Merun Pink). New Bangla product names need
   adding to the $map in parseProducts().
+
+## Ads + funnel audit (2026-11-27, data 28 Oct–26 Nov)
+Ad account: Sunnah Gallery act 947819311679078 (business 1329033489305250). Pixel
+zahrabd.shop = 1660858325436949 (inside the /lp iframe only, not on WP wrapper).
+- Total spend $338. Biggest: "asiya vs 2" $148.50 + "Asiya V2" $39.28 → 2,689
+  messaging chats @ ~$0.07. Zahra web: "Zahra new add" $15.60 (1 purchase),
+  "Sakina Web Sales TEST" $11.38 (0 purchase), "Sakina WhatsApp TEST" $2.18 → 35 chats.
+- Zahra web funnel: 779 link clicks → 385 LPV (~49%) → ViewContent 377 →
+  InitiateCheckout 19 → Purchase 6 (mostly owner tests). AddToCart 0.
+- Ads go to zahrabd.shop/sakina = WordPress wrapper (250 files, ~3.2s) with the
+  real Laravel order page in an iframe at ~4100px: zahrabd.shop/lp/sakina-broka-offer-17.
+- Events Manager: CAPI coverage low, domains not confirmed, EU-only block (ignore).
+Advice given: point ads to /lp page directly; stop Purchase-optimised $4/day
+(no data to learn); push WhatsApp/messaging; track chat→order conversion.
