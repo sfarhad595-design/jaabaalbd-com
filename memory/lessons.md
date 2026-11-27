@@ -13,3 +13,9 @@
   Always save a .bak-YYYYMMDD copy first.
 - cPanel save_file_content drops the final newline and saves CRLF; compare
   hashes after converting CRLF→LF and adding "\n".
+- 2026-11-27 Landing order crashed "Duplicate entry ... users_phone_unique" when the
+  buyer's phone already belonged to a staff/admin user (owner tested with shop
+  number 0160...). Fixed User::findOrCreateCustomer (app/Models/User.php): if phone/
+  email taken by non-customer → return unsaved customer, never block the order.
+  Backup User.php.bak-20261127-dupphone. Real customers were NOT blocked by this
+  (only numbers that are staff accounts). Only 9 orders total in Zahra so far.
